@@ -63,18 +63,19 @@ while True:
     if Orion.xcor()>345:
         myPen.up()
         myPen.goto(0,-205)
-        myPen.write("ORION WON,RIGGED!!!")
+        myPen.write("ORION WON RIGGED!", align = 'center', font=("Arial", 20, "normal"))
+        myPen.hideturtle()
         break
     elif Joe.xcor()>345:
         myPen.up()
         myPen.goto(0,-205)
-        print("JOE WON,RIGGED!!!")
+        print("JOE WON,RIGGED!!!", align = 'center', font=("Arial", 20, "normal"))
         break
     elif Tuffie.xcor()>345:
-        print("TUFFIE WON,RIGGED!!!")
+        print("TUFFIE WON,RIGGED!!!", align = 'center', font=("Arial", 20, "normal"))
         break
     elif Jason.xcor()>345:
-        print("JASON WON,WOOOOOO!!!")
+        print("JASON WON,WOOOOOO!!!", align = 'center', font=("Arial", 20, "normal"))
         break
 def wintext (Orion):
     Orion.penup()
@@ -84,4 +85,3 @@ def wintext (Joe):
     Joe.penup()
     Joe.goto(230,22)
     Joe.write("WINNER", align = 'center', font =("Arial", 20, "normal"))
-
